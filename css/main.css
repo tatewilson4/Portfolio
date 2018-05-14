@@ -49,6 +49,54 @@ table {
 
 
 /* My Code Section */
+.w3-button, .w3-button2 {
+	position: absolute;
+	font-size: 50px;
+	z-index: 1;
+	margin-top: -270px;
+	opacity: .5;
+}
+
+.w3-button {
+	left: 0;
+}
+
+.w3-button2 {
+	right: 0;
+}
+
+#projectImage{
+	object-fit: cover;
+}
+
+#text {
+	text-align: center;
+	font-family: Catamaran;
+	font-size: 20px;
+}
+
+.skills {
+	font-size: 20px !important;
+}
+
+.resume:hover {
+	background-color: #2B7A78;
+    transition: all 0.5s ease-in;
+}
+
+.resume {
+	font-family: Catamaran;
+    font-size: 24px;
+    font-weight: 900;
+    color: #111;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0px;
+	width: 25%;
+
+}
 
 * {
     text-decoration: none;
@@ -74,6 +122,7 @@ header .header-brand {
     margin: 0 auto;
     text-align: center;
     padding: 20px 0px;
+
 }
 
 header .header-brand:hover {
@@ -150,7 +199,6 @@ header .header-projects {
     }
 }
 
-/*index*/
 
 .index-banner {
     width: 100%;
@@ -256,6 +304,18 @@ header .header-projects {
 
 
 /* footer section */
+
+p {
+	width: calc(100% - 80px);
+    padding: 40px 40px;
+    margin-top: 20px;
+    background-color: #111;
+    overflow: hidden;
+	font-family: Catamaran;
+    font-size: 24px;
+    color: #D1E8E2;
+    line-height: 40px;
+}
 
 
 footer {

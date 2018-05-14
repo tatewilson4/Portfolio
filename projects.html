@@ -1,81 +1,129 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Projects</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Catamaran:100.200.300.400.500.600.700.800.900|Cormorant+Garamond:300.300i.400.400i.500.500i.600.600i.700.700i" rel="stylesheet">
-        <script type="text/javascript" src="js/app.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-    </head>
-    <body>
-        <header>
-            <a href="index.html" class="header-brand">Tate A. Wilson</a>
-            <nav>
-                <ul>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <a href="projects.html" class="header-projects">Projects</a>
-            </nav>
-        </header>
-        <main>
-                <section class="index-banner">
-                    <div class="vertical-center">
-                        <h2>I AM A FULL STACK WEB <br>DEVELOPER</h2>
-                        <h1>With an expansive infrastructure of developer skills: HTML5, CSS3, JS, SQL, Heroku, Node.js, Ruby on Rails, Express, MongoDB, Mongoose, jQuery, Bootstrap, Angular JS, AJAX, Git and Github</h1>
-                    </div>
-                </section>
-                <div class="wrapper">
-                    <section class="index-links">
-                        <a href="#">
-                            <div class="index-boxlink-rectangle">
-                                <h3>Project 1</h3>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="index-boxlink-rectangle">
-                                <h3>Project 2</h3>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="index-boxlink-rectangle">
-                                <h3>Project 3</h3>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="index-boxlink-rectangle">
-                                <h3>Project 4</h3>
-                            </div>
-                        </a>
-                    </section>
+<head>
+    <meta charset="utf-8">
+    <title>Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100.200.300.400.500.600.700.800.900|Cormorant+Garamond:300.300i.400.400i.500.500i.600.600i.700.700i" rel="stylesheet">
+    <script type="text/javascript" src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="header-brand">Tate A. Wilson</a>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="projects.html" class="header-projects">Projects</a>
+        </nav>
+    </header>
+    <main>
+        <div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img id="projectImage" src="/Users/tatewilson/Desktop/img/roster.png" width="100%" height="450px">
+  <div id="text" class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Roster
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img id="projectImage" src="/Users/tatewilson/Desktop/img/state.png" width="100%" height="450px">
+  <div id="text" class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    The Highest State
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img id="projectImage" src="/Users/tatewilson/Desktop/img/movie.png" width="100%" height="450px">
+  <div id="text" class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Movie Matcher
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img id="projectImage" src="/Users/tatewilson/Desktop/img/roster.png" width="100%" height="450px">
+  <div id="text" class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+    Something
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button2 w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+    <div class="wrapper">
+        <section class="index-links">
+            <a href="#">
+                <div class="index-boxlink-rectangle">
+                    <h3>Roster</h3>
                 </div>
-            </main>
-            <div class="wrapper">
-            <footer>
-                <ul class="footer-links-main">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="about.html">Bio</a></li>
-                    <li><a href="https://github.com/tatewilson4">Github</a></li>
-                    <li><a href="https://www.linkedin.com/in/wilsontate/">LinkedIn</a></li>
-                </ul>
-                <ul class="footer-links-projects">
-                    <li><span>Latest Projects</span></li>
-                    <li><a href="#">Project 1</a></li>
-                    <li><a href="#">Project 2</a></li>
-                    <li><a href="#">Project 3</a></li>
-                    <li><a href="#">Project 4</a>/li>
-                </ul>
-                <div class="footer-sm">
-                    <a href="https://github.com/tatewilson4">
-                        <img src="/Users/tatewilson/Desktop/img/github.png" alt="GitHub logo">
-                    </a>
-                    <a href="https://www.linkedin.com/in/wilsontate/">
-                        <img src="/Users/tatewilson/Desktop/img/linked.png" alt="LinkedIn logo">
-                    </a>
+            </a>
+            <a href="#">
+                <div class="index-boxlink-rectangle">
+                    <h3>The Highest State</h3>
                 </div>
-            </footer>
-        </div>
-    </body>
+            </a>
+            <a href="#">
+                <div class="index-boxlink-rectangle">
+                    <h3>Movie Matcher</h3>
+                </div>
+            </a>
+            <a href="#">
+                <div class="index-boxlink-rectangle">
+                    <h3>Project 4</h3>
+                </div>
+            </a>
+        </section>
+    </div>
+</main>
+<div class="wrapper">
+    <footer>
+        <ul class="footer-links-main">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="https://docs.google.com/document/d/1ZZJk_bkMBCky5Vkq3ZZUCE7bQKU6N7a_N99CcTs0398/edit">Resume</a></li>
+            <li><a href="https://github.com/tatewilson4">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/wilsontate/">LinkedIn</a></li>
+        </ul>
+        <ul class="footer-links-projects">
+            <li><span>Latest Projects</span></li>
+            <li><a href="#">Roster</a></li>
+            <li><a href="#">The Highest State</a></li>
+            <li><a href="#">Movie Matcher</a></li>
+            <li><a href="#">Project 4</a></li>
+            </ul>
+            <div class="footer-sm">
+                <a href="https://github.com/tatewilson4">
+                    <img src="/Users/tatewilson/Desktop/img/github.png" alt="GitHub logo">
+                </a>
+                <a href="https://www.linkedin.com/in/wilsontate/">
+                    <img src="/Users/tatewilson/Desktop/img/linked.png" alt="LinkedIn logo">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
 </html>
